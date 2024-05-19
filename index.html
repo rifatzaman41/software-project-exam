@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Person Search and Cart</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .results, .cart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sports Person Search and Cart</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a sports person...">
+        <button onclick="searchSportsPerson()">Search</button>
+    </div>
+    <div class="results" id="results"></div>
+    <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <p>Items in cart: <span id="cartCount">0</span></p>
+        <ul id="cartItems"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
